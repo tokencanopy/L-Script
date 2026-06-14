@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sort_dedupe_by_length",
+    "spec": "Take a list of strings. Return a new list with duplicates removed (preserving first occurrence order in the de-duplicated set), then sorted ascending by length. Ties broken by original order after dedup.",
+    "tests": [
+      {"args": [["banana", "hi", "hi", "apple", "a"]], "expected": ["a", "hi", "apple", "banana"]},
+      {"args": [[]], "expected": []},
+      {"args": [["x"]], "expected": ["x"]},
+      {"args": [["aa", "bb", "cc"]], "expected": ["aa", "bb", "cc"]},
+      {"args": [["abcd", "ab", "abc", "ab"]], "expected": ["ab", "abc", "abcd"]}
+    ]
+  },
+  {
+    "id": "sum_evens_up_to_n",
+    "spec": "Return the sum of all non-negative even integers strictly less than n. If n <= 0, return 0.",
+    "tests": [
+      {"args": [10], "expected": 20},
+      {"args": [0], "expected": 0},
+      {"args": [1], "expected": 0},
+      {"args": [11], "expected": 30},
+      {"args": [-5], "expected": 0}
+    ]
+  },
+  {
+    "id": "reverse_string",
+    "spec": "Given a string, return the string reversed character by character.",
+    "tests": [
+      {"args": ["hello"], "expected": "olleh"},
+      {"args": [""], "expected": ""},
+      {"args": ["a"], "expected": "a"},
+      {"args": ["ab"], "expected": "ba"},
+      {"args": ["racecar"], "expected": "racecar"}
+    ]
+  },
+  {
+    "id": "is_palindrome",
+    "spec": "Return True if the input string is a palindrome (case-sensitive, ignoring nothing), else False. Empty string is a palindrome.",
+    "tests": [
+      {"args": ["racecar"], "expected": true},
+      {"args": ["hello"], "expected": false},
+      {"args": [""], "expected": true},
+      {"args": ["a"], "expected": true},
+      {"args": ["ab"], "expected": false}
+    ]
+  },
+  {
+    "id": "count_vowels",
+    "spec": "Return the count of ASCII vowels (a, e, i, o, u, both lowercase and uppercase) in the input string.",
+    "tests": [
+      {"args": ["hello"], "expected": 2},
+      {"args": [""], "expected": 0},
+      {"args": ["AEIOU"], "expected": 5},
+      {"args": ["xyz"], "expected": 0},
+      {"args": ["Programming"], "expected": 3}
+    ]
+  },
+  {
+    "id": "factorial",
+    "spec": "Return n! for non-negative integer n. f(0) is 1.",
+    "tests": [
+      {"args": [0], "expected": 1},
+      {"args": [1], "expected": 1},
+      {"args": [5], "expected": 120},
+      {"args": [10], "expected": 3628800},
+      {"args": [3], "expected": 6}
+    ]
+  },
+  {
+    "id": "common_elements_sorted",
+    "spec": "Given two lists of integers, return a sorted list of distinct integers that appear in BOTH lists.",
+    "tests": [
+      {"args": [[1, 2, 3], [2, 3, 4]], "expected": [2, 3]},
+      {"args": [[], [1, 2]], "expected": []},
+      {"args": [[1, 1, 2], [2, 2, 1]], "expected": [1, 2]},
+      {"args": [[1, 2, 3], [4, 5, 6]], "expected": []},
+      {"args": [[5, 4, 3, 2, 1], [1, 3, 5]], "expected": [1, 3, 5]}
+    ]
+  },
+  {
+    "id": "flatten_one_level",
+    "spec": "Given a list of lists, return a single flattened list (one level only — do not recurse into deeper nesting).",
+    "tests": [
+      {"args": [[[1, 2], [3, 4]]], "expected": [1, 2, 3, 4]},
+      {"args": [[]], "expected": []},
+      {"args": [[[]]], "expected": []},
+      {"args": [[[1], [2], [3]]], "expected": [1, 2, 3]},
+      {"args": [[[1, 2], [], [3]]], "expected": [1, 2, 3]}
+    ]
+  },
+  {
+    "id": "second_largest",
+    "spec": "Given a list of integers with at least two distinct values, return the second-largest distinct value.",
+    "tests": [
+      {"args": [[1, 2, 3, 4]], "expected": 3},
+      {"args": [[5, 5, 4]], "expected": 4},
+      {"args": [[10, 1]], "expected": 1},
+      {"args": [[3, 1, 4, 1, 5, 9, 2, 6]], "expected": 6},
+      {"args": [[-1, -2, -3]], "expected": -2}
+    ]
+  },
+  {
+    "id": "fizzbuzz_list",
+    "spec": "Return a list of length n. For position i (1-indexed, 1..n): 'FizzBuzz' if divisible by 15, 'Fizz' if by 3, 'Buzz' if by 5, otherwise the integer i (as int, not string).",
+    "tests": [
+      {"args": [3], "expected": [1, 2, "Fizz"]},
+      {"args": [5], "expected": [1, 2, "Fizz", 4, "Buzz"]},
+      {"args": [0], "expected": []},
+      {"args": [15], "expected": [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]},
+      {"args": [1], "expected": [1]}
+    ]
+  }
+]

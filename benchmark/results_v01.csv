@@ -1,0 +1,21 @@
+problem_id,pipeline,sample_idx,model,in_tokens,out_tokens,total_tokens,src_chars,src_lscript_tokens,latency_s,held_out_passed,held_out_total,held_out_pass_rate,fail_mode,error_msg,oracle_in_tokens,oracle_out_tokens,oracle_passed,oracle_total,oracle_held_out_agreement
+sort_dedupe_by_length,python,0,gemini-2.5-flash,208,70,278,175,71,1.2470816660206765,5,5,1.0,ok,,0,0,0,0,-1.0
+sort_dedupe_by_length,lscript,0,gemini-2.5-flash,897,37,934,38,38,0.7640838340157643,5,5,1.0,ok,,0,0,0,0,-1.0
+sum_evens_up_to_n,python,0,gemini-2.5-flash,193,47,240,108,48,0.9493265000055544,5,5,1.0,ok,,0,0,0,0,-1.0
+sum_evens_up_to_n,lscript,0,gemini-2.5-flash,882,73,955,59,74,0.9502741660107858,5,5,1.0,ok,,0,0,0,0,-1.0
+reverse_string,python,0,gemini-2.5-flash,180,12,192,26,13,0.6308271250454709,5,5,1.0,ok,,0,0,0,0,-1.0
+reverse_string,lscript,0,gemini-2.5-flash,869,23,892,15,24,0.7033455420169048,0,5,0.0,wrong_output,,0,0,0,0,-1.0
+is_palindrome,python,0,gemini-2.5-flash,194,14,208,31,15,0.7772016249946319,5,5,1.0,ok,,0,0,0,0,-1.0
+is_palindrome,lscript,0,gemini-2.5-flash,883,24,907,17,25,0.6661987919942476,2,5,0.4,wrong_output,,0,0,0,0,-1.0
+count_vowels,python,0,gemini-2.5-flash,195,69,264,127,70,0.9207716659875587,5,5,1.0,ok,,0,0,0,0,-1.0
+count_vowels,lscript,0,gemini-2.5-flash,884,61,945,56,62,0.9341375419753604,0,5,0.0,parse_error,if header missing trailing ⇥: '¿X',0,0,0,0,-1.0
+factorial,python,0,gemini-2.5-flash,186,47,233,93,48,0.884168624994345,5,5,1.0,ok,,0,0,0,0,-1.0
+factorial,lscript,0,gemini-2.5-flash,875,64,939,52,65,0.8268949999473989,5,5,1.0,ok,,0,0,0,0,-1.0
+common_elements_sorted,python,0,gemini-2.5-flash,187,53,240,111,54,0.791143040987663,5,5,1.0,ok,,0,0,0,0,-1.0
+common_elements_sorted,lscript,0,gemini-2.5-flash,876,59,935,68,60,0.748139750037808,5,5,1.0,ok,,0,0,0,0,-1.0
+flatten_one_level,python,0,gemini-2.5-flash,192,36,228,77,37,0.7282460000133142,5,5,1.0,ok,,0,0,0,0,-1.0
+flatten_one_level,lscript,0,gemini-2.5-flash,881,40,921,30,41,0.8125492089893669,5,5,1.0,ok,,0,0,0,0,-1.0
+second_largest,python,0,gemini-2.5-flash,188,24,212,51,25,0.6522047089529224,5,5,1.0,ok,,0,0,0,0,-1.0
+second_largest,lscript,0,gemini-2.5-flash,877,35,912,34,36,0.7427134579629637,5,5,1.0,ok,,0,0,0,0,-1.0
+fizzbuzz_list,python,0,gemini-2.5-flash,226,99,325,266,100,0.9377991249784827,5,5,1.0,ok,,0,0,0,0,-1.0
+fizzbuzz_list,lscript,0,gemini-2.5-flash,915,114,1029,141,115,1.067401416017674,1,5,0.2,wrong_output,,0,0,0,0,-1.0
